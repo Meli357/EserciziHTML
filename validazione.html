@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Validazione</title>
+
+    <style>
+        label{
+            display:block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registrazione utente</h1>
+    <form action="" method="get">
+        <section>
+            <h2>Dati personali</h2>
+            <div>
+                <label for="nome">Nome e cognome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <br/>
+            <div>
+                <label for="birth">Data di nascita:</label>
+                <input type="date" id="birth" name="birth" min="01/01/1980" max="31/12/2004" required>
+            </div>
+            <br/>
+            <h2>Contatti</h2>
+            <div>
+                <label for="telnumber">Numero di telefono:</label>
+                <input type="text" id="telnumber" name="number" maxlength="10" required>
+            </div>
+            <br/>
+            <div>
+                <label for="mail">Email:</label>
+                <input type="email" id="mail" name="mail" required>
+            </div>
+            <br/>
+            <div>
+                <label for="passw">Password:</label>
+                <input type="password" id="passw" name="password" required>
+            </div>
+        </section>
+        <br/>
+        <section>
+            <h2>Scelta abbonamento</h2>
+            <div>
+                <label for="abbonamento"></label>
+                <select required>
+                    <optgroup>
+                        <option value="free">Piano free</option>
+                        <option value="weekly">Settimanale 4€</option>
+                        <option value="monthly">Mensile 18€</option>
+                        <option value="yearly">Annuale 210€</option>
+                    </optgroup>
+                </select>
+            </div>
+            <br/>
+            <fieldset required>
+                <legend>Vantaggi PRO</legend>
+                <ul>
+                    <li>
+                        <label for="yes">Si</label>
+                        <input type="radio" id="yes" name="option" value="Y">
+                    </li>
+                    <li>
+                        <label for="no">No</label>
+                        <input type="radio" id="no" name="option" value="N">
+                    </li>
+                </ul>
+            </fieldset>
+        </section>
+        <section>
+            <h2>Metodo di pagamento</h2>
+            <div>
+                <label for="card">Numero di carta:</label>
+                <input type="text" id="card" name="card" required>
+            </div>
+            <br/>
+            <div>
+                <label for="cvc">CVC:</label>
+                <input type="text" id="cvc" name="cvc" maxlength="3" pattern="\d{3}" required>
+            </div>
+            <br/>
+            <div>
+                <label for="expdate">Scadenza:</label>
+                <select id="expdate" name="expmese" required>
+                    <option value="01">Gennaio</option>
+                    <option value="02">Febbraio</option>
+                    <option value="03">Marzo</option>
+                    <option value="04">Aprile</option>
+                    <option value="05">Maggio</option>
+                    <option value="06">Giugno</option>
+                    <option value="07">Luglio</option>
+                    <option value="08">Agosto</option>
+                    <option value="09">Settembre</option>
+                    <option value="10">Ottobre</option>
+                    <option value="11">Novembre</option>
+                    <option value="12">Dicembre</option>
+                </select>
+                <select id="expdate" name="expanno" required>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                </select>
+            </div>
+            <br/>
+            <div>
+                <label for="address">Indirizzo di fatturazione:</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+        </section>
+        <br>
+        <section>
+            <div>
+                <button type="button">Invia</button>
+            </div>
+        </section> 
+    </form>
+</body>
+</html>
