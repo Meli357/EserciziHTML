@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Attributi</title>
+</head>
+<body>
+    <form>
+        <section>
+            <button type="button" disabled>Pulsante</button>
+        </section>
+        <br/>
+        <section>
+            <div>
+                <label for="film">Numero di film:</label>
+                <input type="number" id="film" name="film" min="0" max="100" step="2" autofocus>
+            </div>
+            <br/>
+            <div>
+                <label for="cinema">visti al cinema</label>
+                <input type="checkbox" id="cinema" name="cinema" checked>
+            </div>
+            <br/>
+            <div>
+                <label for="date">data dell'ultimo film visto:</label>
+                <input type="date" id="date" name="date" min="01/01/2022" max="10/06/2022">
+            </div>
+        </section>
+    </form>
+</body>
+</html>
