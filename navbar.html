@@ -5,23 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NAVBAR</title>
+
 </head>
+
 <body>
-    <nav>Navbar
-        <ul>
-           <li><a href="link1.html">Home</a></li>
-           <li><a href="link2.html">Link</a></li>
-           <li><a href="link3.html">Dropdown</a></li>
-           <li>Disabled</li>
-        </ul>
-        <div>
-            <label for="search"></label>
-            <input type="search" id="search" name="search">
-        </div>
-        <div>
+    <header>
+      <nav>
+        <div class="navbar"> 
+            <ul>
+            <li><a href="link0-html">Navbar</a></li> 
+            <li><a href="link1.html">Home</a></li>
+            <li><a href="link2.html">Link</a></li>
+            <li>
+                <select name="dropdown">
+                      <option value="0">Dropdown</option>
+                      <option value="1">Option 1</option>
+                      <option value="2">Option 2</option>
+                      <option value="3">Option 3</option>
+                </select>
+            </li>
+            <li>Disabled</li>
+            </ul>
+        <form>
+            <input type="text" placeholder="Search" name="search">
+        
             <label for="submit"></label>
-            <input type="submit" id="submit" name="submit">
+            <input type="submit" id="submit" name="submit" value="Search">
+        </form>
         </div>
-    </nav>
+      </nav>
+    </header>
 </body>
 </html>
