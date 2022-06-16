@@ -16,8 +16,7 @@
             justify-content: space-between;
             align-items: center;
         }
-    
-        .menu,
+           
         a,
         button{
             text-decoration: none;
@@ -26,6 +25,11 @@
         li{
             display: inline-block;
             padding: 0 10px;
+        }
+
+        .btn{
+            border: 1px solid green;
+            color: green
         }
     </style>
 
@@ -38,7 +42,7 @@
       <nav> 
             <ul>
             <li><a style=color:aliceblue href="link1.html">Home</a></li>
-            <li><a style=color:rgb(178,182,182) href="link2.html">Link</a></li>
+            <li><a style=color:rgb(190,185,177) href="link2.html">Link</a></li>
             <li>
                 <select style=color:rgb(190,185,177) name="dropdown">
                       <option value="0">Dropdown</option>
@@ -53,7 +57,7 @@
         <form>
             <input type="text" placeholder="Search" name="search">
         
-            <button>Search</button>
+            <button class="btn">Search</button>
         </form>
     </header>
 </body>
