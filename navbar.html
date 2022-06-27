@@ -5,60 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NAVBAR</title>
-
-    <style>
-        body{
-            background-color:rgb(38, 28, 48);
-        }
-
-        header{
-            display:flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-           
-        a,
-        button{
-            text-decoration: none;
-        }
-
-        li{
-            display: inline-block;
-            padding: 0 10px;
-        }
-
-        .btn{
-            border: 1px solid green;
-            color: green
-        }
-    </style>
-
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
 </head>
 
 <body>
-    
-    <header>
-        <strong style=color:aliceblue>Navbar</strong>
-      <nav> 
-            <ul>
-            <li><a style=color:aliceblue href="link1.html">Home</a></li>
-            <li><a style=color:rgb(190,185,177) href="link2.html">Link</a></li>
-            <li>
-                <select style=color:rgb(190,185,177) name="dropdown">
+    <nav>
+       <h3>Navbar</h3><i class="material-icons">menu</i>
+         <ul>
+              <li><a href="link1.html">Home</a></li>
+              <li><a class="link" href="link2.html">Link</a></li>
+              <li>
+                <select name="dropdown">
                       <option value="0">Dropdown</option>
                       <option value="1">Option 1</option>
                       <option value="2">Option 2</option>
                       <option value="3">Option 3</option>
                 </select>
-            </li>
-            <li style="color:rgb(166, 160, 160)">Disabled</li>
-            </ul>
-      </nav>
+              </li>
+              <li><a class="disabled" href="link3.html">Disabled</a></li>
+         </ul>
         <form>
             <input type="text" placeholder="Search" name="search">
-        
-            <button class="btn">Search</button>
+            <button type="submit">Search</button>
         </form>
-    </header>
+    </nav>
 </body>
 </html>
